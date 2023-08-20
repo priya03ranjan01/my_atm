@@ -1,25 +1,18 @@
 import logo from './logo.svg';
 import './App.css';
+import { Button } from "@material-tailwind/react";
+// import {motion} from "framer-motion"
+import {AnimatePresence, motion} from 'framer-motion/dist/framer-motion'
+import { Login } from './login1';
+import { TransactionsTable } from './table';
+import Modal from './modal';
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+  return (<>
+ {/* <TransactionsTable/>
+//  */}
+  <Modal/>
+</>)
 }
 
 export default App;
